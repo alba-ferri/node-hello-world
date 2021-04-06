@@ -3,7 +3,7 @@ page_type: sample
 languages:
 - javascript
 products:
-- azure
+- AWS
 description: "This Node.js application is for use in demonstrating scenarios for AWS Container Registry Tasks."
 urlFragment: ecr-build-helloworld-node
 ---
@@ -41,7 +41,7 @@ This project is intended for use with the following articles on [docs.microsoft.
 
 Although intended for use with the companion articles, you can perform the following steps to run the sample application. These steps require a local [Docker](http://docker.com) installation.
 
-1. `git clone $this_repo´
+1. `git clone git@github.com:alba-ferri/node-hello-world.git´
 1. `cd node-hello-world`
 1. `docker build -t helloecrbuild:v1 .`
 1. `docker run -d -p 8080:80 helloecrbuild:v1`
