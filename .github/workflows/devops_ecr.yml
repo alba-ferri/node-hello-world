@@ -1,5 +1,5 @@
 on: [push]
-name: Secure_DevOps_Workflow
+name: DevOps_Workflow
 
 jobs:
     build-scan-deploy:
