@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "aksdemo-2472"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "aksdemo-2472"
+  template:
+    metadata:
+      labels:
+        app: "aksdemo-2472"
+    spec:
+      containers:
+        - name: "aksdemo-2472"
+          image: "msigniteacr.azurecr.io/aksdemo"
+          ports:
+          - containerPort: 80
